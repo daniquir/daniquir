@@ -1,4 +1,4 @@
-# 🚀 [Daniel Quirant Rico] | [Tu Rol: e.g. Backend Developer]
+# 🚀 [Daniel Quirant Rico] | [Backend Developer]
 
 Bienvenido a mi portfolio personal. Aquí encontrarás un resumen de mi trayectoria, mis proyectos destacados y las tecnologías con las que trabajo a diario.
 
@@ -12,7 +12,6 @@ Bienvenido a mi portfolio personal. Aquí encontrarás un resumen de mi trayecto
 * 🔭 Actualmente trabajando en: **[Qindel Group - Cliente Inditex]**
 * 🌱 Aprendiendo: **[Rust]**
 * 💬 Pregúntame sobre: **[Java, Spring, Spring Boot, Mongo, SQL, Docker, Kubernetes]**
-* ⚡ Fun fact: **[Algo humano: "Hago el mejor café de la oficina" o "Cinturón negro en Karate"]**
 
 ---
 
@@ -24,12 +23,6 @@ Bienvenido a mi portfolio personal. Aquí encontrarás un resumen de mi trayecto
 | **Backend** | ![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat&logo=spring-boot&logoColor=white) ![Hibernate](https://img.shields.io/badge/-Hibernate-59666C?style=flat&logo=hibernate&logoColor=white) |
 | **Database** | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white) |
 | **Herramientas** | ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white) |
-
----
-
-## 📈 Estadísticas de GitHub
-![Stats de mi GitHub](https://github-readme-stats.vercel.app/api?username=daniquir&show_icons=true&theme=radical)
-![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=daniquir&layout=compact&theme=radical)
 
 ---
 
