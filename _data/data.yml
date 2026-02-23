@@ -150,6 +150,9 @@ skills:
   - name: Liquibase
     level: 90%
 
+  - name: Elasticsearch
+    level: 80%
+
   - name: Kafka
     level: 70%
 
