@@ -2,7 +2,7 @@
 
 Bienvenido a mi portfolio personal. Aquí encontrarás un resumen de mi trayectoria, mis proyectos destacados y las tecnologías con las que trabajo a diario.
 
-📍 **Puedes ver mi CV web completo aquí:** [https://daniquir.github.io](https://daniquir.github.io)
+📍 **Puedes ver mi CV web completo aquí:** [https://daniquir.github.io/online-cv](https://daniquir.github.io/online-cv)
 
 ---
 
