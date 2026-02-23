@@ -6,7 +6,7 @@ url: 'https://daniquir.github.io'
 
 #change it according to your repository name
 # disabling since we are using a custom domain
-baseurl: '' 
+baseurl: '/online-cv' 
 
 description: Aquí encontrarás un resumen de mi trayectoria, mis proyectos destacados y las tecnologías con las que trabajo a diario
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
