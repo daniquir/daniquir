@@ -3,8 +3,8 @@
 #
 
 sidebar:
-  position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  position: left # position of the sidebar : left or right
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
@@ -15,7 +15,7 @@ sidebar:
   # Sidebar links
   email: daniel.quirant.rico@gmail.com
   phone: 627616594
-  timezone: Europe/Spain # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  timezone: # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship:
   website: https://daniquir.github.com/ # Include the full website URL, including "http://" or "https://".
   linkedin: daniel-quirant-rico
@@ -49,14 +49,11 @@ sidebar:
     - item: Climbing
       link:
 
-
     - item: Snowboarding
       link:
 
-
     - item: Cooking
       link:
-
 
 career-profile:
   title: Career Profile
@@ -68,11 +65,11 @@ career-profile:
     Donec quam felis, ultricies nec, pellentesque eu.
     Second paragraph if required.
 education:
-  title: Education
+  title: Educación
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
+  - degree: Mantenimiento de sistemas y redes
+    university: IES Severo Ochoa
+    time: 2011 - 2013
     details: |
       Describe your study here lorem ipsum dolor sit amet, consectetuer
       adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -81,9 +78,9 @@ education:
       pretium quis, sem.
         - Bullet point
         - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
+  - degree: Desarrollo de aplicaciones web
+    university: IES Severo Ochoa
+    time: 2013 - 2015
     details: |
       Describe your study here lorem ipsum dolor sit amet, consectetuer
       adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
