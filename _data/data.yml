@@ -73,17 +73,35 @@ experiences:
     time: 2024 - actualidad
     company: Qindel - Inditex
     details: |
-      TODO
+      Modernización del Core Business: Liderazgo técnico en la migración integral del sistema pilar de la compañía, transformando un ecosistema legacy crítico en una arquitectura de última generación.
+
+      Arquitectura de Alta Disponibilidad: Diseño de una solución robusta basada en Java 21 y Arquitectura Hexagonal, preparada para soportar picos de tráfico masivo y garantizar la escalabilidad del negocio.
+
+      Estrategia de Migración: Definición del roadmap tecnológico para desacoplar procesos complejos sin interrupción del servicio, priorizando el rendimiento y la integridad de los datos.
+
+      Excelencia Técnica: Aplicación de estándares rigurosos de Clean Code y Testing (TDD) para asegurar un sistema mantenible a largo plazo, reduciendo drásticamente la deuda técnica acumulada.
   - role: Analista programador senior
     time: 2020 - 2024
     company: Vitro
     details: |
-      TODO
+      Diseño Greenfield: Arquitectura y desarrollo desde cero de una solución disruptiva para el sector salud, utilizando un stack moderno basado en Java/Spring Boot.
+
+      Arquitectura de Seguridad: Implementación de sistemas de alta seguridad para la gestión de datos sensibles, garantizando el cumplimiento de normativas estrictas en entornos críticos.
+
+      Despliegue Offline: Diseño de una arquitectura modular preparada para el despliegue independiente en centros sanitarios sin acceso a Internet, optimizando la resiliencia y la integridad de los datos en local.
+
+      Impacto en Negocio: Desarrollo de funcionalidades de alto valor añadido en el departamento de I+D, traduciendo requisitos complejos en una plataforma puntera y escalable.
   - role: Analista programador
     time: 2018 - 2020
     company: Metaenlace - Tempe grupo Inditex
     details: |
-      TODO
+      Liderazgo Técnico: Colaboración directa con el Tech Lead en la definición de arquitectura y toma de decisiones tecnológicas para la migración integral de sistemas legacy a tecnologías modernas.
+
+      Migración Estratégica: Transformación de monolitos críticos hacia una nueva arquitectura diseñada desde cero, centrada en la escalabilidad y la mantenibilidad.
+
+      Versatilidad Tecnológica: Desarrollo y mantenimiento inicial en entornos diversos (Java, .NET) y automatización de procesos complejos mediante RPA (BluePrism).
+
+      Calidad de Software: Implementación de estándares de desarrollo, liderando la refactorización de lógica de negocio y la integración de buenas prácticas en el ciclo de vida del proyecto.
   - role: Desarrollador web
     time: 2015 - 2018
     company: Everis - ICO & SEPE
