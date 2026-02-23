@@ -5,7 +5,7 @@
 sidebar:
   position: left # position of the sidebar : left or right
   about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: False # set to False if you want education in main section instead of in sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
   name: Daniel Quirant Rico
@@ -35,7 +35,7 @@ sidebar:
   pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   languages:
-    title: Languages
+    title: Idiomas
     info:
     - idiom: Spanish
       level: Nativo
@@ -44,10 +44,12 @@ sidebar:
       level: Profesional
 
 career-profile:
-  title: Career Profile
+  title: Sobre mí
   summary: |
     Ingeniero de Software especializado en el ecosistema Java/Spring, con un enfoque riguroso en la ingeniería de sistemas robustos y escalables. Mi filosofía de desarrollo se basa en la Arquitectura Hexagonal (Ports & Adapters) y los principios de DDD (Domain-Driven Design), garantizando una total independencia del dominio frente a infraestructuras externas y frameworks.
+    
     Defensor del Testing exhaustivo como pilar de la calidad, implementando estrategias que abarcan desde Unit Testing y de Integración hasta contratos de API y TDD. Experto en la construcción de Microservicios de alta disponibilidad, optimización de rendimiento en JVM y diseño de sistemas distribuidos.
+    
     Aunque mi núcleo técnico reside en el Backend, mantengo una visión Fullstack actualizada mediante el desarrollo en Angular para proyectos personales, lo que me permite comprender el flujo de datos de extremo a extremo y colaborar eficazmente en arquitecturas modernas de desacoplamiento.
 education:
   title: Educación
@@ -89,7 +91,7 @@ experiences:
       TODO
 
 skills:
-  title: Skills &amp; Proficiency
+  title: Stack Técnico
 
   toolset:
   - name: Java
