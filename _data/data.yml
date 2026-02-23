@@ -43,18 +43,6 @@ sidebar:
     - idiom: English
       level: Profesional
 
-  interests:
-    title: Interesés
-    info:
-    - item: Climbing
-      link:
-
-    - item: Snowboarding
-      link:
-
-    - item: Cooking
-      link:
-
 career-profile:
   title: Career Profile
   summary: |
@@ -91,7 +79,7 @@ education:
         - Bullet point
 
 experiences:
-  title: Experiences
+  title: Experiencia
   info:
   - role: Lead Developer
     time: 2015 - Present
