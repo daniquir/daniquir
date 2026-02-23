@@ -88,7 +88,21 @@ experiences:
     time: 2015 - 2018
     company: Everis - ICO & SEPE
     details: |
-      TODO
+      ICO:
+      
+      Desarrollo y mantenimiento de sistemas financieros críticos en entornos de alta transaccionalidad bajo Java 6/8 y JSP.
+      
+      Gestión de arquitecturas legacy y migración progresiva de módulos monolíticos hacia estándares más modernos.
+      
+      Resolución de problemas complejos en bases de datos a gran escala y optimización de lógica de negocio, operando bajo estrictos protocolos de seguridad y estabilidad bancaria.
+
+      SEPE:
+
+      Liderazgo técnico en el desarrollo de una nueva aplicación para la administración pública basada en Java 8 y JSF.
+      
+      Responsable del diseño e implementación del motor de reporting integral mediante JasperReports, gestionando la generación masiva de documentos complejos y su integración con el backend.
+      
+      Enfoque en la creación de una arquitectura escalable desde cero y en la automatización de procesos administrativos d
 
 skills:
   title: Stack Técnico
