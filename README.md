@@ -1,90 +1,41 @@
-<a href="https://jekyll-themes.com">
-<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+# 🚀 [Daniel Quirant Rico] | [Tu Rol: e.g. Backend Developer]
 
-# Orbit
-> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
-> Visit [her website](http://themes.3rdwavemedia.com/) for more themes.
+Bienvenido a mi portfolio personal. Aquí encontrarás un resumen de mi trayectoria, mis proyectos destacados y las tecnologías con las que trabajo a diario.
 
-I have made this into a Jekyll Theme. Checkout the live demo [here](https://online-cv.webjeda.com).
+📍 **Puedes ver mi CV web completo aquí:** [https://daniquir.github.io](https://daniquir.github.io)
 
-<table>
-  <tr>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </tr>
-  <tr>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/desktop.png?raw=true" width="600"/>
-    </td>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/mobile.png?raw=true" width="250"/>
-    </td>
-  </tr>
-</table>
+---
 
-## Installation
+## 👨‍💻 Sobre mí
+["Desarrollador apasionado por el Clean Code y la arquitectura de sistemas, con enfoque en soluciones escalables y eficiencia."]
 
-* [Fork](https://github.com/sharu725/online-cv/fork) the repository;
-* Go to settings and set master branch as Github Pages source;
-* Your new site should be ready at `https://<username>.github.io/online-cv/`;
-* Printable version of the site can be found at `https://<username>.github.io/online-cv/print`. Use a third party link https://pdflayer.com/, https://www.web2pdfconvert.com/ etc to get the printable PDF.
+* 🔭 Actualmente trabajando en: **[Qindel Group - Cliente Inditex]**
+* 🌱 Aprendiendo: **[Rust]**
+* 💬 Pregúntame sobre: **[Java, Spring, Spring Boot, Mongo, SQL, Docker, Kubernetes]**
+* ⚡ Fun fact: **[Algo humano: "Hago el mejor café de la oficina" o "Cinturón negro en Karate"]**
 
-Change all the details from one place: `_data/data.yml`.
+---
 
-### To preview/edit locally with docker
+## 🛠️ Stack Tecnológico
 
-```sh
-docker-compose up
-```
+| Área | Tecnologías |
+| :--- | :--- |
+| **Frontend** | ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat&logo=angular&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![RxJS](https://img.shields.io/badge/-RxJS-B7178C?style=flat&logo=reactivex&logoColor=white) |
+| **Backend** | ![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat&logo=spring-boot&logoColor=white) ![Hibernate](https://img.shields.io/badge/-Hibernate-59666C?style=flat&logo=hibernate&logoColor=white) |
+| **Database** | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white) |
+| **Herramientas** | ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white) |
 
-*docker-compose.yml* file is used to create a container that is reachable under <http://localhost:4000>.
-Changes *_data/data.yml* will be visible after a while.
+---
 
-### Local machine
+## 📈 Estadísticas de GitHub
+![Stats de mi GitHub](https://github-readme-stats.vercel.app/api?username=daniquir&show_icons=true&theme=radical)
+![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=daniquir&layout=compact&theme=radical)
 
-* Get the repo into your machine 
+---
 
-```bash
-git clone https://github.com/sharu725/online-cv.git
-```
+## 📫 Contacto
+* **LinkedIn:** [linkedin.com/in/daniel-quirant-rico](https://linkedin.com/in/daniel-quirant-rico)
+* **Email:** [daniel.quirant.rico@gmail.com](mailto:daniel.quirant.rico@gmail.com)
 
-* Install required ruby gems
-
-```bash
-bundle install
-```
-
-* Serve the site locally
-
-```bash
-bundle exec jekyll serve
-```
-
-* Navigate to `http://localhost:4000`
-
-
-## Skins
-
-There are 6 color schemes available:
-
-| Blue | Turquoise | Green |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/blue.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/turquoise.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/green.jpg" width="300"/> |
-
-| Berry | Orange | Ceramic |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/berry.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/orange.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/ceramic.jpg" width="300"/> |
-
-## Credits
-
-Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
-
-Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
-
-Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sharu725/online-cv&type=Date)](https://star-history.com/#sharu725/online-cv&Date)
-
+---
+*Este repositorio contiene el código de mi CV personal desplegado con Jekyll y GitHub Pages.*
