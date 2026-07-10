@@ -26,6 +26,121 @@
     max-width: 1000px;
     width: 1000px;
     box-shadow: none;
+    display: block;
+    background: #fff;
+  }
+
+  .pdf-blocks-flow {
+    width: 1000px;
+    background: #fff;
+  }
+
+  .pdf-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    overflow: hidden;
+  }
+
+  .pdf-block--sidebar {
+    background: $theme-color;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+
+    .tagline {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .meta,
+    .time,
+    .lang-desc {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .profile-container {
+      background: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 30px;
+    }
+
+    .container-block,
+    .contact-container {
+      padding: 30px;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 12px;
+      }
+    }
+
+    .container-block-title {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  .pdf-block--main {
+    background: #fff;
+    color: $text-color-secondary;
+    padding: 24px 40px;
+
+    .section-title {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+      color: darken($theme-color, 15%);
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    .job-title,
+    .degree,
+    .level-title {
+      color: $text-color;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .company,
+    .time,
+    .university {
+      color: $text-grey;
+      margin-bottom: 8px;
+    }
+
+    .upper-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+
+    .details p {
+      margin-bottom: 8px;
+    }
+
+    .level-bar {
+      height: 12px;
+      background: $smoky-white;
+      margin-top: 8px;
+    }
+
+    .level-bar-inner {
+      height: 12px;
+      background: $theme-color !important;
+    }
   }
 
   .sidebar-wrapper {
