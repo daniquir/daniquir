@@ -12,6 +12,18 @@
   Jekyll theme for creating resume" }}">
   <meta name="baseurl" content="{{ site.baseurl }}">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      var theme = localStorage.getItem("cv-theme");
+      if (theme) document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 

@@ -1,0 +1,122 @@
+:root {
+  --color-accent: #c9a227;
+  --color-accent-soft: #6dbf8a;
+  --color-body-bg: #eceae4;
+  --color-main-bg: #f7f6f3;
+  --color-text: #2a3038;
+  --color-text-secondary: #4a5563;
+  --color-text-grey: #6b7a8f;
+  --color-skill-bar: #e8e6e0;
+  --color-skill-fill: #5a8f7b;
+  --color-link: #3d6b55;
+  --color-link-hover: #2a4d3c;
+  --font-mono: "JetBrains Mono", "IBM Plex Mono", "Fira Code", ui-monospace, monospace;
+}
+
+[data-theme="dark"] {
+  --color-body-bg: #0f1216;
+  --color-main-bg: #161b22;
+  --color-text: #d8dde6;
+  --color-text-secondary: #a8b0bd;
+  --color-text-grey: #7d8796;
+  --color-skill-bar: #252b35;
+  --color-skill-fill: #6dbf8a;
+  --color-link: #8fd4a8;
+  --color-link-hover: #b8e8c8;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+.terminal-prompt {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  margin: 12px 0 0;
+  opacity: 0.85;
+  letter-spacing: -0.03em;
+
+  .prompt-user {
+    color: var(--color-accent-soft);
+  }
+
+  .prompt-path {
+    color: var(--color-accent);
+  }
+
+  .prompt-cursor {
+    color: rgba(255, 255, 255, 0.9);
+    animation: blink 1.2s step-end infinite;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.floating-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+}
+
+.theme-toggle,
+.pdf-button {
+  background: $theme-color;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    background: lighten($theme-color, 8%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &:disabled,
+  &.is-loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .fas {
+    margin-right: 0;
+  }
+}
+
+.pdf-button .fas {
+  margin-right: 5px;
+}
+
+.footer {
+  .copyright {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--color-text-grey);
+    opacity: 0.85;
+  }
+
+  .footer-prompt {
+    color: var(--color-accent-soft);
+  }
+}

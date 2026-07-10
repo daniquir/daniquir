@@ -3,3 +3,6 @@ _site/
 .sass-cache/
 .jekyll-metadata
 .jekyll-cache
+
+# PDF build artifacts (generación local opcional con ./generate-pdf.sh)
+assets/pdf/

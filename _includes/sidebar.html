@@ -12,19 +12,27 @@
     {% endif %}
 
     {% if sidebar.tagline %}
-    <h3 class="tagline">{{ sidebar.tagline }}</h3>
+    <h3 class="tagline font-mono">{{ sidebar.tagline }}</h3>
+    {% endif %}
+
+    {% if sidebar.prompt %}
+    <p class="terminal-prompt" aria-hidden="true">
+      <span class="prompt-user">{{ sidebar.prompt }}</span>:<span class="prompt-path">~</span><span class="prompt-cursor">$</span>
+    </p>
     {% endif %}
 
   </div><!--//profile-container-->
 
   {% include contact.html %}
 
-  {% if sidebar.education %}
-    {% include education.html %}
-  {% endif %}
+  {% include skills-sidebar.html %}
 
   {% include language.html %}
   {% include interests.html %}
+
+  {% if sidebar.education %}
+    {% include education.html %}
+  {% endif %}
 
   {% if sidebar.about %}
     {% include about.html %}

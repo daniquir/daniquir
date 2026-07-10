@@ -6,23 +6,16 @@
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="es">
   <!--<![endif]-->
   {% include head.html %}
-  <style>
-    body {
-      padding: 0 !important;
-    }
-    .wrapper {
-      max-width: unset !important;
-    }
-  </style>
-  <body>
+  <body class="print-view" data-theme="light">
+    {% include sidebar-bg.html %}
+    {% include main-bg.html %}
     <div class="wrapper">
       {% include sidebar.html %}
 
       <div class="main-wrapper">{{ content }}</div>
     </div>
-    {% include scripts.html %}
   </body>
 </html>

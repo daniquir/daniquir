@@ -1,4 +1,5 @@
-{% assign skills = site.data.data.skills %} {% if skills %}
+{% assign skills = site.data.data.skills %}
+{% if skills and skills.intro %}
 <section class="skills-section section">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
@@ -8,25 +9,8 @@
     {{ skills.title }}
   </h2>
 
-  {% if skills.intro %}
-  <div class="intro">
-    <p>{{ skills.intro }}</p>
-  </div>
-  {% endif %}
-
-  <div class="skillset">
-    {% for skill in skills.toolset %}
-    <div class="item">
-      <h3 class="level-title">{{ skill.name }}</h3>
-      {% assign skill_level = 'width: ' | append: skill.level %}
-      <div class="level-bar">
-        <div class="level-bar-inner" style="{{skill_level}}"></div>
-      </div>
-      <!--//level-bar-->
-    </div>
-    <!--//item-->
-    {% endfor %}
+  <div class="intro skills-intro">
+    {{ skills.intro | markdownify }}
   </div>
 </section>
-<!--//skills-section-->
 {% endif %}

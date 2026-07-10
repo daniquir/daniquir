@@ -1,87 +1,233 @@
-// Container used while html2canvas captures the CV for PDF export.
-// Must stay visible (no opacity:0 / z-index:-1) or the canvas renders blank.
-.pdf-export-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 10001;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.96);
-  color: $text-color;
-  font-size: 16px;
-  pointer-events: none;
-}
+@mixin cv-pdf-layout {
+  :root,
+  [data-theme="dark"] {
+    --color-body-bg: #fff;
+    --color-main-bg: #f7f6f3;
+    --color-text: #2a3038;
+    --color-text-secondary: #4a5563;
+    --color-text-grey: #6b7a8f;
+    --color-link: #3d6b55;
+    --color-link-hover: #2a4d3c;
+    --color-accent: #c9a227;
+    --color-accent-soft: #6dbf8a;
+  }
 
-.pdf-export-container {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-  width: 1000px;
-  background: #fff;
-  pointer-events: none;
-
+  html,
   body {
+    width: 100%;
+    height: auto;
+    margin: 0 !important;
     padding: 0 !important;
-    background: #fff;
-  }
-
-  .wrapper {
-    max-width: 1000px;
-    width: 1000px;
-    box-shadow: none;
-    margin: 0;
-  }
-
-  .profile-container {
-    overflow: visible;
-  }
-
-  .avatar {
-    max-width: 100px;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 100%;
-  }
-
-  .sidebar-wrapper,
-  .main-wrapper {
+    background: transparent !important;
+    -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
   }
 
-  .skillset .level-bar-inner {
-    background-color: $theme-color !important;
-  }
-}
-
-@media print {
-  @page {
-    size: A4;
-    margin: 8mm;
-  }
-
-  body {
-    font-size: 9pt;
-    background-color: white;
-    padding: 0;
+  .sidebar-bg,
+  .main-bg,
+  .print-page-spacer,
+  body::before,
+  .terminal-prompt {
+    display: none !important;
   }
 
   .wrapper {
-    max-width: 100%;
-    box-shadow: none;
-  }
-
-  .main-wrapper .time {
-    padding: 10px 30px 10px 10px;
-    -webkit-print-color-adjust: exact;
+    position: relative !important;
+    display: block !important;
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    z-index: 1;
   }
 
   .sidebar-wrapper {
-    position: static;
-    -webkit-print-color-adjust: exact;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 64mm !important;
+    max-width: 64mm !important;
+    z-index: 2;
+    float: none !important;
+    margin: 0 !important;
+    background: transparent !important;
+    color: #fff !important;
+    padding: 12mm 10mm 10mm 10mm !important;
+    box-sizing: border-box;
+
+    a {
+      color: #fff !important;
+    }
+
+    .tagline {
+      font-size: 8.5pt !important;
+      line-height: 1.35 !important;
+    }
+
+    .tagline,
+    .meta,
+    .time,
+    .lang-desc {
+      color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    .profile-container {
+      background: rgba(0, 0, 0, 0.18) !important;
+      padding: 10px 8px !important;
+    }
+
+    .container-block {
+      padding: 10px 0 !important;
+    }
+
+    .container-block-title {
+      font-size: 9px !important;
+      margin-bottom: 7px !important;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.92) !important;
+    }
+
+    .contact-list li {
+      margin-bottom: 7px !important;
+      font-size: 8pt !important;
+      word-break: break-word;
+    }
+
+    .contact-list .fas,
+    .contact-list .fab {
+      font-size: 13px !important;
+    }
+
+    .skills-sidebar {
+      display: block !important;
+    }
+
+    .skill-group {
+      margin-bottom: 8px !important;
+    }
+
+    .skill-group-label {
+      font-size: 8px !important;
+      color: #6dbf8a !important;
+    }
+
+    .skill-tags {
+      gap: 3px !important;
+    }
+
+    .skill-tags li {
+      font-size: 7.5pt !important;
+      padding: 2px 5px !important;
+      background: rgba(255, 255, 255, 0.1) !important;
+      color: rgba(255, 255, 255, 0.9) !important;
+      border-color: rgba(255, 255, 255, 0.12) !important;
+    }
+
+    .education-container .item {
+      margin-bottom: 8px !important;
+    }
+
+    .degree {
+      font-size: 8.5pt !important;
+      line-height: 1.35 !important;
+    }
+  }
+
+  .contact-list li.pdf,
+  .contact-list li.website {
+    display: none !important;
+  }
+
+  .main-wrapper {
+    position: relative !important;
+    z-index: 1;
+    margin-left: 64mm !important;
+    width: auto !important;
+    max-width: none !important;
+    padding: 12mm 12mm 10mm 8mm !important;
+    background: transparent !important;
+    box-sizing: border-box;
+  }
+
+  .avatar {
+    max-width: 72px;
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+  }
+
+  .name {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    margin-bottom: 5px !important;
+  }
+
+  .main-wrapper .skills-section {
+    display: none !important;
+  }
+
+  .main-wrapper .section {
+    margin-bottom: 14px !important;
+  }
+
+  .main-wrapper .section-title {
+    font-size: 13px !important;
+    margin: 0 0 8px !important;
+    color: var(--color-text) !important;
+
+    .fa-stack .fa-circle {
+      color: var(--color-accent) !important;
+    }
+  }
+
+  .main-wrapper .experiences-section .item,
+  .main-wrapper .projects-section .item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 12px !important;
+  }
+
+  .main-wrapper .details p,
+  .main-wrapper .summary p {
+    font-size: 9.5pt;
+    line-height: 1.42;
+    margin-bottom: 6px;
+    color: var(--color-text-secondary) !important;
+  }
+
+  .main-wrapper .job-title,
+  .main-wrapper .degree {
+    font-size: 11pt !important;
+    color: var(--color-text) !important;
+  }
+
+  .main-wrapper .company,
+  .main-wrapper .time {
+    font-size: 9pt !important;
+    color: var(--color-text-grey) !important;
+  }
+
+  .main-wrapper .project-title {
+    font-size: 10pt !important;
+  }
+
+  .main-wrapper .project-title a {
+    color: var(--color-accent-soft) !important;
+  }
+
+  .main-wrapper .project-tagline {
+    font-size: 9.5pt;
+    line-height: 1.42;
+    color: var(--color-text-secondary) !important;
+  }
+
+  .main-wrapper .projects-section .intro p {
+    font-size: 9.5pt;
+    line-height: 1.42;
+    margin-bottom: 10px;
+    color: var(--color-text-secondary) !important;
   }
 
   .remove-container.container-block {
@@ -90,30 +236,76 @@
 
   footer,
   .pdf-button,
+  .theme-toggle,
+  .floating-controls,
   .d-print-none {
     display: none !important;
-  }
-
-  .item,
-  .container-block,
-  .skillset .item {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-  .section {
-    break-inside: auto;
-    page-break-inside: auto;
-  }
-
-  .skillset .level-bar-inner {
-    background-color: $theme-color !important;
-    -webkit-print-color-adjust: exact;
   }
 
   .fa-inverse,
   .fa-inverse:after,
   .fa-inverse:before {
     color: #ffffff !important;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 10mm 10mm 0;
+  }
+
+  @include cv-pdf-layout;
+}
+
+@media screen {
+  .sidebar-bg,
+  .main-bg {
+    display: none;
+  }
+
+  body.print-view {
+    @include cv-pdf-layout;
+
+    position: relative;
+    width: 210mm;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 0 !important;
+    background: #fff !important;
+
+    .sidebar-bg {
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 64mm;
+      height: 100%;
+      background: $theme-color !important;
+      z-index: 0;
+    }
+
+    .main-bg {
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 64mm;
+      right: 0;
+      height: 100%;
+      background: var(--color-main-bg) !important;
+      z-index: 0;
+    }
+
+    .floating-controls,
+    footer {
+      display: none !important;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      box-shadow: none;
+      min-height: 100%;
+    }
   }
 }

@@ -43,11 +43,26 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Install Node dependencies
+        run: npm ci
+      - name: Install Chromium for Puppeteer
+        run: npx puppeteer browsers install chrome
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Generate CV PDF
+        run: |
+          chmod +x scripts/ci-generate-pdf.sh
+          BASE_PATH="${{ steps.pages.outputs.base_path }}" SITE_DIR="_site" scripts/ci-generate-pdf.sh
+      - name: Verify CV PDF in site artifact
+        run: test -s "_site/assets/pdf/Daniel_Quirant_Rico_CV.pdf"
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3

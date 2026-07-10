@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "description": "Herramientas de build del CV online",
+  "scripts": {
+    "pdf": "node scripts/generate-pdf.js"
+  },
+  "devDependencies": {
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "23.11.1"
+  }
+}

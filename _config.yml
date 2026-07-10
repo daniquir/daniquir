@@ -8,10 +8,10 @@ url: 'https://daniquir.github.io'
 # disabling since we are using a custom domain
 baseurl: '/online-cv'
 
-description: CV de Daniel Quirant Rico. Senior Backend Engineer especializado en Java/Spring, microservicios y arquitectura hexagonal. Experiencia en Inditex, sector salud y administración pública.
+description: CV de Daniel Quirant Rico. Senior Backend Engineer especializado en Java/Spring, microservicios y arquitectura hexagonal. Experiencia en Inditex, sector financiero, salud y administración pública.
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: ceramic # blue turquoise green berry orange ceramic teal oceanstale
-chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
+theme_skin: cave # blue turquoise green berry orange ceramic teal oceanstale cave
+chrome_mobile_color: "#1a1f26"
 
 # Tracker
 #analytics: UA-83979019-1

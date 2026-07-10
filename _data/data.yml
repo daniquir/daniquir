@@ -9,11 +9,12 @@ sidebar:
 
   name: Daniel Quirant Rico
   tagline: Senior Backend Engineer · Java/Spring
+  prompt: daniel@backend
   avatar: profile.png
 
   email: daniel.quirant.rico@gmail.com
   phone:
-  location: España · remoto / híbrido
+  location: España · remoto
   timezone:
   citizenship:
   website: https://daniquir.github.io/online-cv/
@@ -32,7 +33,6 @@ sidebar:
   mastodon:
   hackerrank:
   leetcode:
-  pdf:
 
   languages:
     title: Idiomas
@@ -41,22 +41,16 @@ sidebar:
       level: Nativo
 
     - idiom: Inglés
-      level: B2 — lectura técnica y reuniones
-
-  interests:
-    title: Metodologías ágiles
-    info:
-    - item: Scrum
-    - item: Kanban
+      level: B1 — lectura y escritura técnica
 
 career-profile:
   title: Sobre mí
   summary: |
-    Ingeniero de software senior con más de 9 años de experiencia construyendo backends en Java/Spring para entornos de alta exigencia: retail, salud y administración pública.
+    Backend senior en **Java/Spring** con más de once años en producción en retail (Inditex), financiero, salud y administración pública. Me ocupo sobre todo de **arquitectura y migraciones**: sacar sistemas legacy, diseñar microservicios que aguanten picos de carga y mantener el servicio mientras cambias piezas debajo.
 
-    Actualmente en Qindel (cliente Inditex), donde participo en la modernización del sistema core de negocio: migración desde legacy, arquitectura hexagonal, Java 21 y microservicios diseñados para picos de demanda. En Vitro diseñé desde cero una plataforma sanitaria modular, desplegable offline y orientada a la protección de datos sensibles.
+    En **Qindel** (cliente Inditex) participo en la modernización del core de negocio: arquitectura hexagonal, Java 25 y microservicios, sustituyendo procesos batch de horas por datos operativos casi en tiempo real. En **Vitro** formé parte del equipo de I+D que levantó una plataforma sanitaria desde cero; yo llevé el módulo analítico y de datos **multicentro**, con sincronización casi en tiempo real entre sedes hospitalarias.
 
-    Perfil backend con solvencia fullstack (TypeScript, Angular) y base en infraestructura. Priorizo testing automatizado, generadores de código y librerías compartidas para escalar equipos sin perder calidad. En proyectos personales profundizo en Rust y Python (ver sección de proyectos).
+    En el día a día apoyo al equipo con **tests automatizados**, generadores de código y librerías compartidas. Combino backend con **Angular** y TypeScript cuando el proyecto lo pide. Fuera del trabajo mantengo proyectos personales en **Rust** y **Python** (ver sección de proyectos). Formación previa en mecánica industrial.
 
 education:
   title: Educación
@@ -75,44 +69,46 @@ education:
 experiences:
   title: Experiencia
   info:
-  - role: Analista programador senior
+  - role: Senior Backend Engineer
     time: 2024 - actualidad
     company: Qindel — Inditex · core retail
     details: |
-      Liderazgo técnico en la migración del sistema core de negocio desde legacy hacia **Java 21**, **arquitectura hexagonal** y **microservicios** (Spring Boot, Spring Cloud).
+      Migración del core de negocio desde legacy hacia **Java 25**, **arquitectura hexagonal** y **microservicios** (Spring Boot, Spring Cloud). Referencia técnica en diseño y evolución del nuevo sistema.
 
-      Diseño orientado a alta disponibilidad y picos de tráfico en retail; soporte y seguimiento de incidencias en producción.
+      En curso: sustituir procesos batch que hoy tardan **horas** por **datos operativos casi en tiempo real** en el entorno retail.
 
-      Roadmap de migración incremental sin interrupción del servicio; contratos de API, **Testcontainers** y **TDD** como estándar del equipo.
-  - role: Analista programador senior
+      Roadmap incremental sin cortar servicio. Diseño de APIs con **OpenAPI**, contratos entre servicios, **Testcontainers** y **TDD** como práctica habitual del equipo.
+  - role: Senior Backend Engineer
     time: 2020 - 2024
     company: Vitro · I+D sector salud
     details: |
-      Arquitectura y desarrollo **greenfield** de plataforma **Java/Spring Boot** para sector salud, de diseño a producción.
+      Desarrollo en equipo de una plataforma **Java/Spring Boot** para sector salud, desde el diseño inicial hasta producción.
 
-      Solución modular desplegable **offline** en centros sin conectividad; datos sensibles con requisitos estrictos de seguridad y cumplimiento normativo.
+      Responsable del módulo **analítico y de datos**: recolección **multicentro** en hospitales con varias sedes y procesamiento de actualizaciones **casi en tiempo real** para análisis científico y estadístico.
 
-      Desarrollo de **generadores de código** y **librerías internas** para alinear artefactos y acelerar al equipo de I+D.
-  - role: Analista programador senior
+      Módulos desplegables **offline** en centros sin conectividad; datos sensibles con cumplimiento normativo.
+
+      Formaciones internas semanales rotativas en el equipo de I+D. Generadores de código y librerías internas para reducir trabajo repetitivo.
+  - role: Senior Backend Engineer
     time: 2018 - 2020
     company: Metaenlace — Tempe / Inditex · migración legacy
     details: |
-      Migración de monolitos legacy a arquitectura moderna; definición de arquitectura junto al Tech Lead en entorno Inditex.
+      Tras cambios regulatorios, **proyecto end-to-end en solitario**: servicios de **más de 20 minutos** de respuesta reducidos a **menos de 3 segundos** con cachés, rediseño de procesos y optimización de rendimiento.
 
-      **TDD** en todos los desarrollos; creación de generadores de código y artefactos compartidos para homogeneizar equipos.
+      Migración de monolitos legacy a arquitectura moderna en entorno Inditex; definición de arquitectura junto al Tech Lead.
 
-      Stack: **Java**, **.NET** y automatización **RPA (Blue Prism)** en procesos de negocio.
-  - role: Analista programador
+      **TDD** en todos los desarrollos; generadores de código y artefactos compartidos entre equipos. Stack: **Java**, **.NET** y **RPA (Blue Prism)**.
+  - role: Backend Engineer
     time: 2015 - 2018
     company: Everis — ICO & SEPE · financiero y público
     details: |
-      **ICO (financiero):** Java 6/8 y JSP en entorno bancario de alta transaccionalidad; generadores de código, entorno de desarrollo centralizado y formación de nuevas incorporaciones.
+      **ICO (financiero):** liderazgo de un equipo de **3 personas** en la migración desde cero del módulo de **seguridad de la plataforma**: **Angular** en frontend y **Spring Security** en backend, conviviendo con el legacy mientras se migraban monolitos y microservicios sin interrumpir el servicio.
 
-      **SEPE (público):** aplicación **Java 8/JSF** fullstack; motor de reporting con **JasperReports** para generación masiva de documentos.
+      **SEPE (público):** desarrollo fullstack **Java 8/JSF**; motor de reporting con **JasperReports** para generación masiva de documentos.
 
 projects:
   title: Proyectos open source
-  intro: Selección de proyectos personales donde aplico arquitectura, seguridad e infraestructura más allá del stack diario en Java.
+  intro: Proyectos personales en Rust y Python — seguridad, backups e infraestructura fuera del stack Java del día a día.
   assignments:
   - title: TALOS
     link: https://github.com/daniquir/talos
@@ -124,38 +120,25 @@ projects:
 skills:
   title: Stack técnico
   intro: |
-    Núcleo profesional en Java/Spring y ecosistemas enterprise. También he trabajado con WebLogic, WebSphere, Tomcat, Kibana, Graylog, MapStruct, Lombok, JasperReports, React, Vue, Ionic, PHP, .NET y Blue Prism (RPA).
+    Núcleo en **Java/Spring** y arquitectura enterprise: microservicios, migraciones legacy y entornos de alta carga. Diseño de APIs con **OpenAPI**, testing con TDD y Testcontainers. Infra habitual con Docker, Kubernetes/OpenShift y mensajería (Kafka, RabbitMQ, JMS). También he trabajado con Hibernate, Liquibase, Flyway, Angular, Jenkins, SonarQube, MongoDB, Elasticsearch, Kibana, Graylog y stack legacy (WebLogic, JSF, .NET, RPA) en proyectos anteriores.
 
-  toolset:
-  - name: Java (5–21) & Spring (Boot, Security, Cloud, Keycloak)
-    level: 95%
+  core:
+  - label: Backend
+    items:
+    - Java & Spring Boot
+    - Arquitectura hexagonal
+    - OpenAPI & APIs REST
 
-  - name: Arquitectura hexagonal, DDD & microservicios
-    level: 90%
+  - label: Calidad & datos
+    items:
+    - JUnit & Mockito & Testcontainers
+    - SQL & JPA & Hibernate
+    - Liquibase & Flyway
 
-  - name: Testing (JUnit 5, Mockito, Testcontainers, TDD)
-    level: 90%
+  - label: Plataforma
+    items:
+    - Docker & K8s & OpenShift
+    - Kafka & RabbitMQ & JMS
+    - Jenkins & SonarQube
 
-  - name: SQL (PostgreSQL, Oracle, DB2, MySQL)
-    level: 90%
-
-  - name: TypeScript & Angular
-    level: 80%
-
-  - name: Docker, Kubernetes & OpenShift
-    level: 85%
-
-  - name: Hibernate, Liquibase & Flyway
-    level: 85%
-
-  - name: Kafka, RabbitMQ & JMS
-    level: 80%
-
-  - name: Git, Jenkins & SonarQube
-    level: 85%
-
-  - name: MongoDB & Elasticsearch
-    level: 75%
-
-  - name: Python & Rust
-    level: 70%
+footer: "// uptime: 11+ yrs · java, arquitectura y backends"
