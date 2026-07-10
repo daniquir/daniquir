@@ -93,6 +93,9 @@ p {
     }
     li {
       margin-bottom: 15px;
+      span {
+        color: #fff;
+      }
       &:last-child {
         margin-bottom: 0;
       }

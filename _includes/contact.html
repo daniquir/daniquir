@@ -1,6 +1,12 @@
 <div class="contact-container container-block">
   <ul class="list-unstyled contact-list">
 
+    {% if sidebar.location %}
+    <li class="location"><i class="fas fa-map-marker-alt"></i>
+      <span>{{ sidebar.location }}</span>
+    </li>
+    {% endif %}
+
     {% if sidebar.email %}
     <li class="email"><i class="fas fa-envelope"></i>
       <a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a>
@@ -33,7 +39,7 @@
 
     {% if sidebar.website %}
     <li class="website"><i class="fas fa-globe-americas"></i>
-      <a href="{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
+      <a href="{{ sidebar.website }}" target="_blank">{{ sidebar.website_label | default: sidebar.website }}</a>
     </li>
     {% endif %}
 

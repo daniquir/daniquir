@@ -3,54 +3,61 @@
 #
 
 sidebar:
-  position: left # position of the sidebar : left or right
-  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  position: left
+  about: False
+  education: True
 
-  # Profile information
   name: Daniel Quirant Rico
-  tagline: Backend Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  tagline: Senior Backend Engineer · Java/Spring
+  avatar: profile.png
 
-  # Sidebar links
   email: daniel.quirant.rico@gmail.com
-  phone: 
-  timezone: # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  phone:
+  location: España · remoto / híbrido
+  timezone:
   citizenship:
-  website: https://daniquir.github.io/online-cv/ # Include the full website URL, including "http://" or "https://".
+  website: https://daniquir.github.io/online-cv/
+  website_label: CV online
   linkedin: daniel-quirant-rico
-  xing: 
+  xing:
   github: daniquir
-  telegram: # add your nickname without '@' sign
+  telegram:
   gitlab:
   bitbucket:
-  bluesky:  # Specify your full Bluesky handle
-  twitter: 
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  bluesky:
+  twitter:
+  stack-overflow:
   codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  goodreads:
+  mastodon:
+  hackerrank:
+  leetcode:
+  pdf:
 
   languages:
     title: Idiomas
     info:
-    - idiom: Spanish
+    - idiom: Español
       level: Nativo
-      
-    - idiom: English
-      level: Profesional
+
+    - idiom: Inglés
+      level: B2 — lectura técnica y reuniones
+
+  interests:
+    title: Metodologías ágiles
+    info:
+    - item: Scrum
+    - item: Kanban
 
 career-profile:
   title: Sobre mí
   summary: |
-    Ingeniero de Software especializado en el ecosistema Java/Spring, con un enfoque riguroso en la ingeniería de sistemas robustos y escalables. Mi filosofía de desarrollo se basa en la Arquitectura Hexagonal (Ports & Adapters) y los principios de DDD (Domain-Driven Design), garantizando una total independencia del dominio frente a infraestructuras externas y frameworks.
-    
-    Defensor del Testing exhaustivo como pilar de la calidad, implementando estrategias que abarcan desde Unit Testing y de Integración hasta contratos de API y TDD. Experto en la construcción de Microservicios de alta disponibilidad, optimización de rendimiento en JVM y diseño de sistemas distribuidos.
-    
-    Aunque mi núcleo técnico reside en el Backend, mantengo una visión Fullstack actualizada mediante el desarrollo en Angular para proyectos personales, lo que me permite comprender el flujo de datos de extremo a extremo y colaborar eficazmente en arquitecturas modernas de desacoplamiento.
+    Ingeniero de software senior con más de 9 años de experiencia construyendo backends en Java/Spring para entornos de alta exigencia: retail, salud y administración pública.
+
+    Actualmente en Qindel (cliente Inditex), donde participo en la modernización del sistema core de negocio: migración desde legacy, arquitectura hexagonal, Java 21 y microservicios diseñados para picos de demanda. En Vitro diseñé desde cero una plataforma sanitaria modular, desplegable offline y orientada a la protección de datos sensibles.
+
+    Perfil backend con solvencia fullstack (TypeScript, Angular) y base en infraestructura. Priorizo testing automatizado, generadores de código y librerías compartidas para escalar equipos sin perder calidad. En proyectos personales profundizo en Rust y Python (ver sección de proyectos).
+
 education:
   title: Educación
   info:
@@ -58,112 +65,97 @@ education:
     university: IES Severo Ochoa
     time: 2011 - 2013
     details: |
-      Mi trayectoria técnica comenzó desde la base, comprendiendo el hierro y la infraestructura antes de saltar a la arquitectura de software. Estudiar el ciclo de Sistemas y Redes me aportó una visión crítica que muchos desarrolladores puros pasan por alto.
-      Como complemento a mi formación técnica en sistemas, participé activamente en un proyecto de robótica aplicada centrado en el diseño y construcción de un robot siguelíneas autónomo desarrollado en C.
+      Base en infraestructura, redes y sistemas operativos. Proyecto de robótica: robot siguelíneas autónomo en C.
   - degree: Desarrollo de aplicaciones web
     university: IES Severo Ochoa
     time: 2013 - 2015
     details: |
-      Esta etapa supuso la transición de la infraestructura al diseño de software de alto nivel, permitiéndome profundizar en la ingeniería necesaria para construir aplicaciones empresariales modernas. Durante el ciclo, me centré en dominar el ciclo de vida completo del desarrollo.
+      Formación en desarrollo de aplicaciones empresariales: ciclo completo de software, bases de datos y entornos web.
 
 experiences:
   title: Experiencia
   info:
   - role: Analista programador senior
     time: 2024 - actualidad
-    company: Qindel - Inditex
+    company: Qindel — Inditex · core retail
     details: |
-      Modernización del Core Business: Liderazgo técnico en la migración integral del sistema pilar de la compañía, transformando un ecosistema legacy crítico en una arquitectura de última generación.
+      Liderazgo técnico en la migración del sistema core de negocio desde legacy hacia **Java 21**, **arquitectura hexagonal** y **microservicios** (Spring Boot, Spring Cloud).
 
-      Arquitectura de Alta Disponibilidad: Diseño de una solución robusta basada en Java 21 y Arquitectura Hexagonal, preparada para soportar picos de tráfico masivo y garantizar la escalabilidad del negocio.
+      Diseño orientado a alta disponibilidad y picos de tráfico en retail; soporte y seguimiento de incidencias en producción.
 
-      Estrategia de Migración: Definición del roadmap tecnológico para desacoplar procesos complejos sin interrupción del servicio, priorizando el rendimiento y la integridad de los datos.
-
-      Excelencia Técnica: Aplicación de estándares rigurosos de Clean Code y Testing (TDD) para asegurar un sistema mantenible a largo plazo, reduciendo drásticamente la deuda técnica acumulada.
+      Roadmap de migración incremental sin interrupción del servicio; contratos de API, **Testcontainers** y **TDD** como estándar del equipo.
   - role: Analista programador senior
     time: 2020 - 2024
-    company: Vitro
+    company: Vitro · I+D sector salud
     details: |
-      Diseño Greenfield: Arquitectura y desarrollo desde cero de una solución disruptiva para el sector salud, utilizando un stack moderno basado en Java/Spring Boot.
+      Arquitectura y desarrollo **greenfield** de plataforma **Java/Spring Boot** para sector salud, de diseño a producción.
 
-      Arquitectura de Seguridad: Implementación de sistemas de alta seguridad para la gestión de datos sensibles, garantizando el cumplimiento de normativas estrictas en entornos críticos.
+      Solución modular desplegable **offline** en centros sin conectividad; datos sensibles con requisitos estrictos de seguridad y cumplimiento normativo.
 
-      Despliegue Offline: Diseño de una arquitectura modular preparada para el despliegue independiente en centros sanitarios sin acceso a Internet, optimizando la resiliencia y la integridad de los datos en local.
-
-      Impacto en Negocio: Desarrollo de funcionalidades de alto valor añadido en el departamento de I+D, traduciendo requisitos complejos en una plataforma puntera y escalable.
-  - role: Analista programador
+      Desarrollo de **generadores de código** y **librerías internas** para alinear artefactos y acelerar al equipo de I+D.
+  - role: Analista programador senior
     time: 2018 - 2020
-    company: Metaenlace - Tempe grupo Inditex
+    company: Metaenlace — Tempe / Inditex · migración legacy
     details: |
-      Liderazgo Técnico: Colaboración directa con el Tech Lead en la definición de arquitectura y toma de decisiones tecnológicas para la migración integral de sistemas legacy a tecnologías modernas.
+      Migración de monolitos legacy a arquitectura moderna; definición de arquitectura junto al Tech Lead en entorno Inditex.
 
-      Migración Estratégica: Transformación de monolitos críticos hacia una nueva arquitectura diseñada desde cero, centrada en la escalabilidad y la mantenibilidad.
+      **TDD** en todos los desarrollos; creación de generadores de código y artefactos compartidos para homogeneizar equipos.
 
-      Versatilidad Tecnológica: Desarrollo y mantenimiento inicial en entornos diversos (Java, .NET) y automatización de procesos complejos mediante RPA (BluePrism).
-
-      Calidad de Software: Implementación de estándares de desarrollo, liderando la refactorización de lógica de negocio y la integración de buenas prácticas en el ciclo de vida del proyecto.
-  - role: Desarrollador web
+      Stack: **Java**, **.NET** y automatización **RPA (Blue Prism)** en procesos de negocio.
+  - role: Analista programador
     time: 2015 - 2018
-    company: Everis - ICO & SEPE
+    company: Everis — ICO & SEPE · financiero y público
     details: |
-      ICO:
-      
-      Desarrollo y mantenimiento de sistemas financieros críticos en entornos de alta transaccionalidad bajo Java 6/8 y JSP.
-      
-      Gestión de arquitecturas legacy y migración progresiva de módulos monolíticos hacia estándares más modernos.
-      
-      Resolución de problemas complejos en bases de datos a gran escala y optimización de lógica de negocio, operando bajo estrictos protocolos de seguridad y estabilidad bancaria.
+      **ICO (financiero):** Java 6/8 y JSP en entorno bancario de alta transaccionalidad; generadores de código, entorno de desarrollo centralizado y formación de nuevas incorporaciones.
 
-      SEPE:
+      **SEPE (público):** aplicación **Java 8/JSF** fullstack; motor de reporting con **JasperReports** para generación masiva de documentos.
 
-      Liderazgo técnico en el desarrollo de una nueva aplicación para la administración pública basada en Java 8 y JSF.
-      
-      Responsable del diseño e implementación del motor de reporting integral mediante JasperReports, gestionando la generación masiva de documentos complejos y su integración con el backend.
-      
-      Enfoque en la creación de una arquitectura escalable desde cero y en la automatización de procesos administrativos digitales.
+projects:
+  title: Proyectos open source
+  intro: Selección de proyectos personales donde aplico arquitectura, seguridad e infraestructura más allá del stack diario en Java.
+  assignments:
+  - title: TALOS
+    link: https://github.com/daniquir/talos
+    tagline: Gestor de secretos self-hosted en Rust. Arquitectura de 3 capas aisladas (Web → Storage → Bunker), cifrado GPG RSA-4096, mTLS, rate limiting, auditoría, backup/restore y despliegue Docker.
+  - title: Memory Vault
+    link: https://github.com/daniquir/memory-vault
+    tagline: Backup híbrido para Linux en Python. Combina Rclone (sync) y Restic (snapshots cifrados AES-256) sobre Wasabi S3; multi-dispositivo, retención configurable, RM-Shield y CLI + GUI.
 
 skills:
-  title: Stack Técnico
+  title: Stack técnico
+  intro: |
+    Núcleo profesional en Java/Spring y ecosistemas enterprise. También he trabajado con WebLogic, WebSphere, Tomcat, Kibana, Graylog, MapStruct, Lombok, JasperReports, React, Vue, Ionic, PHP, .NET y Blue Prism (RPA).
 
   toolset:
-  - name: Java
-    level: 100%
-    
-  - name: Spring & Spring boot
-    level: 100%
+  - name: Java (5–21) & Spring (Boot, Security, Cloud, Keycloak)
+    level: 95%
 
-  - name: Docker
-    level: 100%
+  - name: Arquitectura hexagonal, DDD & microservicios
+    level: 90%
 
-  - name: Kubernetes
+  - name: Testing (JUnit 5, Mockito, Testcontainers, TDD)
+    level: 90%
+
+  - name: SQL (PostgreSQL, Oracle, DB2, MySQL)
+    level: 90%
+
+  - name: TypeScript & Angular
     level: 80%
 
-  - name: MongoDB
+  - name: Docker, Kubernetes & OpenShift
+    level: 85%
+
+  - name: Hibernate, Liquibase & Flyway
+    level: 85%
+
+  - name: Kafka, RabbitMQ & JMS
+    level: 80%
+
+  - name: Git, Jenkins & SonarQube
+    level: 85%
+
+  - name: MongoDB & Elasticsearch
     level: 75%
 
-  - name: SQL (MySQL, PostgreSQL, OracleDB, DB2, MariaDB)
-    level: 90%
-
-  - name: Hibernate
-    level: 90%
-
-  - name: Liquibase
-    level: 90%
-
-  - name: Elasticsearch
-    level: 80%
-
-  - name: Kafka
-    level: 70%
-
-  - name: ActiveMQ
-    level: 80%
-
-  - name: Testing (Junit5, Mockito, testcontainer)
-    level: 90%
-
-  - name: Maven
-    level: 90%
-    
-  - name: Angular
+  - name: Python & Rust
     level: 70%
