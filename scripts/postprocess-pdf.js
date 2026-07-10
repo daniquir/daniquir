@@ -73,6 +73,7 @@ async function composePdf(inputPath, outputPath, metricsPath) {
     }
   }
 
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, await outputPdf.save());
 }
 
