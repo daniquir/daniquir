@@ -4,8 +4,14 @@ body.pdf-export {
   background-color: white;
   padding: 0;
 
+  .pdf-button {
+    display: none !important;
+  }
+
   .wrapper {
-    max-width: 100%;
+    max-width: 1000px;
+    width: 1000px;
+    box-shadow: none;
   }
 
   .sidebar-wrapper {
