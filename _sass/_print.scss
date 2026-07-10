@@ -22,137 +22,34 @@
   background: #fff;
   pointer-events: none;
 
+  body {
+    padding: 0 !important;
+    background: #fff;
+  }
+
   .wrapper {
     max-width: 1000px;
     width: 1000px;
     box-shadow: none;
-    display: block;
-    background: #fff;
+    margin: 0;
   }
 
-  .pdf-blocks-flow {
-    width: 1000px;
-    background: #fff;
+  .profile-container {
+    overflow: visible;
   }
 
-  .pdf-block {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    overflow: hidden;
+  .avatar {
+    max-width: 100px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
   }
 
-  .pdf-block--sidebar {
-    background: $theme-color;
-    color: #fff;
-
-    a {
-      color: #fff;
-    }
-
-    .tagline {
-      color: rgba(255, 255, 255, 0.6);
-    }
-
-    .meta,
-    .time,
-    .lang-desc {
-      color: rgba(255, 255, 255, 0.6);
-    }
-
-    .profile-container {
-      background: rgba(0, 0, 0, 0.2);
-      text-align: center;
-      padding: 30px;
-    }
-
-    .container-block,
-    .contact-container {
-      padding: 30px;
-    }
-
-    .contact-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        margin-bottom: 12px;
-      }
-    }
-
-    .container-block-title {
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: 700;
-      margin-top: 0;
-      margin-bottom: 15px;
-    }
-  }
-
-  .pdf-block--main {
-    background: #fff;
-    color: $text-color-secondary;
-    padding: 24px 40px;
-
-    .section-title {
-      text-transform: uppercase;
-      font-size: 20px;
-      font-weight: 500;
-      color: darken($theme-color, 15%);
-      margin-top: 0;
-      margin-bottom: 16px;
-    }
-
-    .job-title,
-    .degree,
-    .level-title {
-      color: $text-color;
-      font-size: 16px;
-      font-weight: 500;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .company,
-    .time,
-    .university {
-      color: $text-grey;
-      margin-bottom: 8px;
-    }
-
-    .upper-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 4px;
-    }
-
-    .details p {
-      margin-bottom: 8px;
-    }
-
-    .level-bar {
-      height: 12px;
-      background: $smoky-white;
-      margin-top: 8px;
-    }
-
-    .level-bar-inner {
-      height: 12px;
-      background: $theme-color !important;
-    }
-  }
-
-  .sidebar-wrapper {
-    position: static;
+  .sidebar-wrapper,
+  .main-wrapper {
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
-  }
-
-  .skillset,
-  .container-block {
-    break-inside: avoid;
-    page-break-inside: avoid;
   }
 
   .skillset .level-bar-inner {
@@ -160,66 +57,30 @@
   }
 }
 
-// Styles for PDF export via html2canvas (screen capture, not @media print)
-body.pdf-export {
-  font-size: 9pt;
-  background-color: white;
-  padding: 0;
-
-  .pdf-button {
-    display: none !important;
-  }
-
-  .wrapper {
-    max-width: 1000px;
-    width: 1000px;
-    box-shadow: none;
-  }
-
-  .sidebar-wrapper {
-    position: static;
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
-
-  .skillset,
-  .container-block {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-  footer {
-    display: none;
-  }
-}
-
 @media print {
   @page {
     size: A4;
+    margin: 8mm;
   }
+
   body {
     font-size: 9pt;
     background-color: white;
     padding: 0;
   }
+
   .wrapper {
     max-width: 100%;
+    box-shadow: none;
   }
 
-  //   img.avatar {
-  //     filter: grayscale(1);
-  //     -webkit-filter: greyscale(1);
-  //   }
   .main-wrapper .time {
     padding: 10px 30px 10px 10px;
-    //  float: right;
-    //  color: black !important;
     -webkit-print-color-adjust: exact;
   }
+
   .sidebar-wrapper {
     position: static;
-    //  float: right;
-    //  width: 40%;
     -webkit-print-color-adjust: exact;
   }
 
@@ -227,13 +88,22 @@ body.pdf-export {
     display: none;
   }
 
-  footer {
-    display: none;
+  footer,
+  .pdf-button,
+  .d-print-none {
+    display: none !important;
   }
 
-  .skillset,
-  .container-block {
+  .item,
+  .container-block,
+  .skillset .item {
     break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .section {
+    break-inside: auto;
+    page-break-inside: auto;
   }
 
   .skillset .level-bar-inner {
@@ -241,15 +111,9 @@ body.pdf-export {
     -webkit-print-color-adjust: exact;
   }
 
-   .fa-inverse,
-   .fa-inverse:after,
-   .fa-inverse:before {
-     color: #ffffff !important;
-   }
-
-    /* Hide buttons when printing */
-    .pdf-button,
-    .d-print-none {
-        display: none !important;
-    }
+  .fa-inverse,
+  .fa-inverse:after,
+  .fa-inverse:before {
+    color: #ffffff !important;
+  }
 }
