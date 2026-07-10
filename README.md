@@ -8,7 +8,7 @@ CV web con mi trayectoria profesional, proyectos open source y stack técnico.
 
 ## Sobre mí
 
-Ingeniero de software senior especializado en **Java/Spring**, arquitectura hexagonal y sistemas de misión crítica. Más de 9 años de experiencia en retail (Inditex), salud y sector público.
+Ingeniero de software senior especializado en **Java/Spring**, arquitectura hexagonal y sistemas de misión crítica. Más de 11 años de experiencia en retail (Inditex), salud y sector público.
 
 * Actualmente: **Qindel — Inditex** (modernización del core de negocio)
 * Aprendiendo: **Rust** (proyecto [TALOS](https://github.com/daniquir/talos))
