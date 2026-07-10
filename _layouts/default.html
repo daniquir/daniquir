@@ -9,12 +9,8 @@
 {% include head.html %}
 
 <body>
-  <button onclick="print()" class="print-button d-print-none">
-    <i class="fas fa-file-pdf"></i>Print
-  </button>
-
   <button onclick="generatePDF()" class="pdf-button d-print-none" id="pdfButton">
-    <i class="fas fa-file-pdf"></i>PDF
+    <i class="fas fa-file-pdf"></i> Descargar PDF
   </button>
 
   <div class="wrapper">
@@ -28,6 +24,9 @@
   {% include footer.html %}
 
   {% include scripts.html %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="{{ site.baseurl }}/assets/js/pdf-generator.js"></script>
 </body>
 

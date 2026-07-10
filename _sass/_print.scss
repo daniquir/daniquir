@@ -1,3 +1,30 @@
+// Styles for PDF export via html2canvas (screen capture, not @media print)
+body.pdf-export {
+  font-size: 9pt;
+  background-color: white;
+  padding: 0;
+
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .sidebar-wrapper {
+    position: static;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .skillset,
+  .container-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
 @media print {
   @page {
     size: A4;
@@ -53,7 +80,6 @@
    }
 
     /* Hide buttons when printing */
-    .print-button,
     .pdf-button,
     .d-print-none {
         display: none !important;
