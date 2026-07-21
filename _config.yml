@@ -25,6 +25,18 @@ sass:
 compress-site: yes
 exclude:
   - assets/pdf
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - scripts
+  - package.json
+  - package-lock.json
+  - generate-pdf.sh
+  - serve.sh
+  - docker-compose.yml
+  - README.md
+  - LICENSE.md
 
 encoding: "utf-8"
 compress_html: # - http://jch.penibelst.de/
