@@ -7,8 +7,12 @@ cd "$(dirname "$0")/.."
 BASE_PATH="${BASE_PATH:-/online-cv}"
 SITE_DIR="${SITE_DIR:-_site}"
 PORT="${PORT:-4000}"
+# Normaliza: "" o "/" → raíz; "/online-cv" → /online-cv
+BASE_PATH="${BASE_PATH%/}"
+[[ -z "${BASE_PATH}" || "${BASE_PATH}" == "/" ]] && BASE_PATH=""
 CV_URL="http://127.0.0.1:${PORT}${BASE_PATH}/print/"
 TMP_DIR="$(mktemp -d)"
+SERVE_ROOT="$(mktemp -d)"
 RAW_PDF="${TMP_DIR}/Daniel_Quirant_Rico_CV.raw.pdf"
 METRICS="${TMP_DIR}/.pdf-metrics.json"
 OUTPUT_PDF="${SITE_DIR}/assets/pdf/Daniel_Quirant_Rico_CV.pdf"
@@ -20,13 +24,24 @@ fi
 
 mkdir -p "${SITE_DIR}/assets/pdf"
 
-python3 -m http.server "${PORT}" --directory "${SITE_DIR}" &
+# Jekyll escribe en _site/ pero los assets usan site.baseurl (/online-cv/...).
+# Montamos _site bajo ese prefijo para que print y CSS resuelvan igual que en Pages.
+SITE_ABS="$(cd "${SITE_DIR}" && pwd)"
+if [[ -n "${BASE_PATH}" ]]; then
+  mkdir -p "${SERVE_ROOT}${BASE_PATH%/*}"
+  ln -s "${SITE_ABS}" "${SERVE_ROOT}${BASE_PATH}"
+  SERVE_DIR="${SERVE_ROOT}"
+else
+  SERVE_DIR="${SITE_ABS}"
+fi
+
+python3 -m http.server "${PORT}" --directory "${SERVE_DIR}" &
 SERVER_PID=$!
 
 cleanup() {
   kill "${SERVER_PID}" 2>/dev/null || true
   wait "${SERVER_PID}" 2>/dev/null || true
-  rm -rf "${TMP_DIR}"
+  rm -rf "${TMP_DIR}" "${SERVE_ROOT}"
 }
 trap cleanup EXIT
 
