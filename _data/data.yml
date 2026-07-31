@@ -107,9 +107,12 @@ experiences:
       **SEPE (público):** desarrollo fullstack **Java 8/JSF**; motor de reporting con **JasperReports** para generación masiva de documentos.
 
 projects:
-  title: Proyectos open source
-  intro: Proyectos personales en Rust y Python — seguridad, backups e infraestructura fuera del stack Java del día a día.
+  title: Proyectos personales
+  intro: Proyectos en Rust, Python y TypeScript — seguridad, backups, infraestructura y herramientas de desarrollo fuera del stack Java del día a día.
   assignments:
+  - title: Cortex
+    link: https://daniquir.github.io/cortex/es/
+    tagline: Extensión VS Code con flujo agentic (Plan → Build) sobre OpenCode. Contexto léxico+semántico, Policy Brain y diffs inline.
   - title: TALOS
     link: https://github.com/daniquir/talos
     tagline: Gestor de secretos self-hosted en Rust. Arquitectura de 3 capas aisladas (Web → Storage → Bunker), cifrado GPG RSA-4096, mTLS, rate limiting, auditoría, backup/restore y despliegue Docker.

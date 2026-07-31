@@ -1,0 +1,44 @@
+{
+  "agent": {
+    "build": {
+      "mode": "primary",
+      "options": {},
+      "permission": {
+        "edit": {
+          "*": "allow",
+          ".cortex/plans/*": "deny",
+          ".cortex/plans/**": "deny",
+          "**/.cortex/plans/*": "deny",
+          ".cortex/memory.json": "deny"
+        },
+        "bash": "ask",
+        "question": "allow"
+      }
+    },
+    "plan": {
+      "disable": false,
+      "mode": "primary",
+      "options": {},
+      "permission": {
+        "edit": {
+          "*": "deny",
+          ".cortex/plans/*": "allow",
+          ".cortex/plans/**": "allow",
+          "**/.cortex/plans/*": "allow"
+        },
+        "bash": "ask"
+      }
+    }
+  },
+  "permission": {
+    "edit": {
+      "*": "allow",
+      ".cortex/plans/*": "deny",
+      ".cortex/plans/**": "deny",
+      "**/.cortex/plans/*": "deny",
+      ".cortex/memory.json": "deny"
+    },
+    "question": "allow"
+  },
+  "$schema": "https://opencode.ai/config.json"
+}

@@ -16,10 +16,11 @@ Ingeniero de software senior especializado en **Java/Spring**, arquitectura hexa
 
 ---
 
-## Proyectos open source
+## Proyectos personales
 
 | Proyecto | Descripción |
 | :--- | :--- |
+| [**Cortex**](https://daniquir.github.io/cortex/es/) | Extensión VS Code con flujo agentic (Plan → Build) sobre OpenCode. Contexto léxico+semántico, Policy Brain y diffs inline |
 | [**TALOS**](https://github.com/daniquir/talos) | Gestor de secretos en Rust con arquitectura 3 capas, GPG, mTLS y Docker |
 | [**Memory Vault**](https://github.com/daniquir/memory-vault) | Backup híbrido Linux: Rclone + Restic + Wasabi S3, CLI y GUI |
 
